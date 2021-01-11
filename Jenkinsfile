@@ -7,9 +7,9 @@ pipeline {
             echo "$GIT_BRANCH"
          }
       }
-   stage('Docker build') {
+   stage('build') {
          steps {
-            pwsh(script:'docker images -a')	
+            powershell 'Write-output "Build Successfull from jenkinsfile!"'
        }
    }
    }
