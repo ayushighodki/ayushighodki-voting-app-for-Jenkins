@@ -12,4 +12,5 @@ pipeline {
             pwsh(script:'docker images -a')	
        }
    }
+   }
 }
